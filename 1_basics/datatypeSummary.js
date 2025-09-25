@@ -32,3 +32,36 @@ const myFunc = function() {
     console.log("hello world")
 } // function
 
+
+
+
+
+
+
+
+
+
+
+// stack(primitive) / heap(non-primitive) 
+
+                            // example of primitive datatype
+
+let myName = "kartik"
+let anotherName = "myName"
+
+console.log( myName)
+console.log( anotherName)
+
+
+                             // example of non primitive datatype
+let bro = {
+    Email: "bro@gmail.com", 
+    upiId: "bro@okaxis"
+    
+}            
+
+let bro2 = bro
+
+bro2.Email = "bro2@gmail.com"
+console.log(bro)
+console.log(bro2)

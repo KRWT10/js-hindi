@@ -49,3 +49,14 @@ console.log(Object.keys(tindernew));
 console.log(Object.values(tindernew));
 console.log(Object.hasOwn('isLoggedIn')); // to check  wether the property is present or not 
 
+const course = {
+    cousrename : "Javascript",
+    cousrefees : "989",
+    courseduration : "6months", 
+}
+
+console.log(course.courseduration);
+
+const {courseduration: coIns} = course
+console.log(coIns);
+

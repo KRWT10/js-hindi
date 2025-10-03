@@ -35,15 +35,17 @@ if (true) {
              let website = " : www.kartikkumar.com"
                 console.log(username + website);
                 
-    }
-}
-
-console.log(one(90));    
+            }
+        }
+        
+        console.log(one(90));    
 
 function one(num){
     return num+10
 }
 
 const addTwoNumbers =function two(num){    // when we assign function to a variable it is called function expression
-    return num+20                          // and we cannot access the function before declaration 
-console.log(addTwoNumbers(90));
+    return num+20   
+                                                 // and we cannot access the function before declaration 
+}
+console.log(addTwoNumbers(69));

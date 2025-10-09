@@ -6,7 +6,7 @@
     <title>DOCUMENT OBJECT MODEL</title>
 </head>
 <body style="background-color: #414141; color: beige;">
-    <ul class="temp">
+    <ul class="language">
         <li>
             JAVASCRIPT
         </li>
@@ -14,7 +14,35 @@
 </body>
 <script>
     function addlanguage(langName) {
-        const li = Document.createElement('li')
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li) 
     }
+    addlanguage("python")
+    addlanguage("typescript")
+
+    function addoptilanguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage("django")
+
+    // Edit
+    
+    const secLang = document.querySelector("li:nth-child(2)")
+    secLang.innerHTML = "html"   
+
+    // Edit 
+
+    const newlang = document.querySelector("li:first-child")
+    newlang.outerHTML = '<li>sql</li>'
+
+    // Remove 
+
+    const fourlang = document.querySelector("li:nth-child(2)")
+    fourlang.remove()
+
+     
 </script>
 </html>

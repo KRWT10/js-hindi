@@ -27,13 +27,34 @@
     //     alert('stop clicking on river   ')
     // } , false)
 
-    document.getElementById('river').addEventListener('click', function (e) {
-        console.log("you clicked on river ");
+    // document.getElementById('river').addEventListener('click', function (e) {
+    //     console.log("you clicked on river ");
                 
-    } , false )
-    document.getElementById('owl').addEventListener('click', function (e) {
-        console.log("you clicked on owl");
+    // } , false )
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("you clicked on owl");
+    //     e.stopPropagation()
                 
-    } , false )
+    // } , false )
+
+    // document.getElementById('google').addEventListener('click' ,function(e){
+    //     e.preventDefault ()
+    //     e.stopPropagation ()
+    //     console.log("clicked on google");
+        
+    // })
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+                        
+            let removeit = e.target.parentNode
+            removeit.remove()        
+        }
+
+
+    })
+
+
 </script>
 </html>

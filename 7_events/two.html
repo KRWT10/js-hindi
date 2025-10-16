@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JUST A NORMAL HEADING </h1>
+    <button id= "stop">STOP</button>
+</body>
+<script>
+    const sayMyName = (function () {
+        console.log("json");
+    })
+    setInterval(sayMyName , 2000 )
+
+
+    // document.querySelector('h1').innerHTML = "best language "
+    const changeHeading = function () {
+        document.querySelector('h1').innerHTML = "changed heading" 
+    }
+   const changeME = setTimeout( changeHeading , 2000)
+
+    document.querySelector('#stop').addEventListener('click' , function(){
+            clearTimeout(changeME)
+            console.log("STOPPED");
+            
+    })
+</script>
+
+</html>
+
